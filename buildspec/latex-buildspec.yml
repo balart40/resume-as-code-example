@@ -1,0 +1,19 @@
+version: 0.2
+phases:
+  pre_build:
+    commands:
+      - apt-get update
+      - apt-get install -y unzip curl
+      - curl "https://d1vvhvl2y92vvt.cloudfront.net/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+      - unzip awscliv2.zip
+      - ./aws/install
+      - echo "Preparing for LaTeX compilation"
+
+  build:
+    commands:
+      - pdflatex main.tex
+      - mv main.pdf franciscoresume2023.pdf
+
+  post_build:
+    commands:
+      - aws s3 cp franciscoresume2023.pdf s3://franciscobalart.io/ --acl "public-read" --content-type "application/pdf" --metadata Content-Type=application/pdf

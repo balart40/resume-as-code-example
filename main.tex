@@ -1,0 +1,217 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+    \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+    \item\small{
+        \textbf{#1}{: #2 \vspace{-2pt}}
+    }
+}
+
+\newcommand{\resumeSubheading}[4]{
+    \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & #2 \\
+        \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[1]{
+    \item\small{
+            {#1 \vspace{-2pt}}
+    }
+}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+\textbf{\Large Francisco Eduardo Balart Sanchez} & Email : \href{mailto:balart40@hotmail.com}{balart40@hotmail.com}\\
+\href{https://www.linkedin.com/in/febalart/}{https://www.linkedin.com/in/febalart/} & Mobile : +1-206-499-3108 \\
+\end{tabular*}
+
+%-----------EXPERIENCE-----------------
+\section{Work Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Amazon}{Seattle, WA}
+{Software Developer Engineer in Test (SDE-T)}{Jan 2022 - Present}
+\resumeItemListStart
+\resumeItem{AWS Big Data Service for Amazon.com products}
+{Acted as SDE-T Lead on Back-end AWS ETL solution by impacting customer experience by selectively shown products based on regional information for Search, Detail Page, Cart and Checkout on Amazon.com shopping stages.}
+\resumeSubItem{Implemented re-usable Java modules for multiple Amazon Consumables team's projects, such as an ETL system on Amazon catalog performing Big Data to regionalize product search results.}
+\resumeSubItem{Enabled functionality including backend components for robust hermetic test infrastructure in AWS Lambdas and in-transit data from AWS S3 to DDB data consistency check.}
+\resumeSubItem{Built highly scalable and extensible test frameworks interacting with AWS and non-AWS services to establish a secure CI/CD pipeline leveraging End-to-End Integration Tests, Shadow Tests, Canaries, and Load testing.}
+\resumeSubItem{Developed AWS Lambdas in Python with complete PyTest unit test coverage for pull request approval.}
+\resumeSubItem{Drove team projects test plan strategy, test cases and Go-no-Go requirements to validate readiness and ensure end to end stability for project launch.}
+\resumeSubItem{Designed and implemented a serverless framework with AWS SQS and Lambdas for data consistency checks to maintain code stability and minimize breakages, this framework was asynchronous therefore perform verification when the AWS DDB changed regardless if there was a pipeline deployment.}
+\resumeItemListEnd
+\resumeSubheading
+{Amazon}{Seattle, WA}
+{Quality Assurance Engineer in Test (QAE)}{Oct 2019 - Dec 2021}
+\resumeItemListStart
+\resumeItem{AWS Big Data Service for Amazon.com products}
+{Served as the QA lead, designing the overall test plan strategy, test plans, and test automation for the native AWS service including End-to-End integration tests in our CI/CD pipeline.}
+\resumeItem{Alexa Shopping}
+{Designed test plans in test rail, test automation and test frameworks to verify the expected behavior and execution functionality of software behind the Alexa Shopping Service across Echo devices and Amazon mobile such as Accuracy of Intent, backend Alexa Shopping customer operation on shopping list and Amazon cart operations.}
+\resumeSubItem{Performed UI test automation for resilient hermetic testing with Selenium and Appium on a Java and Python based framework using page models for test pattern approach.}
+\resumeSubItem{
+QA Lead of \textbf{``Add to Cart"} feature on \textbf{Alexa} (Echo devices) for my Fresh, Whole Foods and Retail Cart. Verified the Accessibility (A11Y) of UI, and tested all possible customer shopping flow on Cart. Verified ``Add to cart " related backend calls against intent with LLM team.}
+\resumeItemListEnd
+\resumeSubheading
+{Oracle}{Guadalajara, Mexico}
+{Software Developer}{Sep 2017 - Sep 2019}
+\resumeItemListStart
+\resumeItem{Oracle Cloud Infrastructure (OCI)}
+{Led testing on the High Availability of the Oracle Cloud Infrastructure with focus on the OCI Software Defined Network (Higgs) as well as the High availability, and fault tolerance resiliency of Oracle GoldenGate middleware, which are used to replicate information from Oracle Database to many others databases to ensure data high availability.}
+\resumeSubItem{Developed detailed and comprehensive test plans outlining steps for re-production, and implemented test cases using a Java-based test framework for multiple projects of the OCI IaaS team to enable a smooth launch process.}
+\resumeItem{Oracle}
+{Oracle Cloud Service (OCS) QA lead, verified GoldenGate Middleware and Higgs Software Defined Network for OCI migration, ensured that the IaaS meet the QA launch bar in terms of high availability an resiliency. \newline}
+\resumeItemListEnd
+\resumeSubheading
+{ITESO}{Guadalajara, Mexico}
+{Subject Teacher}{Aug 2017 - Dec 2017}
+\resumeItemListStart
+\resumeItem{Introduction to algorithms}
+{Taught course covering critical topics such as data structures, search and sorting algorithms as well as time and space complexity calculation for engineering bachelor's degree students on the Western Institute of Technology and Higher Education (ITESO).}
+\resumeItemListEnd
+\resumeSubheading
+{ITESO}{Guadalajara, Mexico}
+{Research Assistant}{Aug 2016 - Dec 2017}
+\resumeItemListStart
+\resumeItem{Mobile Ad-hoc Networks (MANETs)}
+{Conducted research on Mobile Ad-hoc Networks (MANETs), focusing on cluster-based distributed algorithms and MAC protocol simulation using networks simulator 3 (ns3).}
+\resumeSubItem{Conclusion led to reduce network broadcast overhead, and efficient build of network backbone resulting in 2 published IEEE articles outlined in \hyperref[sec:Publications]{\textbf{Publications}} section.}
+\resumeItemListEnd
+\resumeSubheading
+{Intel}{Guadalajara, Mexico}
+{Signal Integrity Engineer}{Nov 2014 - Mar 2016}
+\resumeItemListStart
+\resumeItem{Intel Xeon Phi Pre-Silicon Signal Integrity Simulation}
+{Performed clock signal integrity for Intel Xeon-Phi Micro-processors analysis and simulation using MATLAB.}
+\resumeSubItem{Calculated impedance and transfer function, correlation between simulation and lab measurements and compare it against benchmark quality to allow chip launch process to continue launch process. }
+\resumeItemListEnd
+\resumeSubheading
+{Intel}{Guadalajara, Mexico}
+{Hardware Verification Engineer}{Sept 2011 - Nov 2014}
+\resumeItemListStart
+\resumeItem{Intel Xeon Phi Pre-Silicon DFT/DFX}
+{Developed C++/Perl Software to validate hardware described in VHDL/RTL, focusing on on physical layer of PCIE and KTI while ensuring coverage through automated test cases.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+%
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+\resumeSubHeadingListStart
+\resumeItem{Languages}
+{Python, Java, TypeScript, C++, SQL, Scala}
+\resumeItem{Operating Systems}
+{Linux: CentOS 6.X, Linux Enterprise 10/11, Amazon Linux}
+\resumeItem{Technologies}
+{AWS (Athena, S3, Glue, Step Function, Lambda, DDB), TestNG, Mockito, Lombok, JUnit, Dagger, GitHub \& Git, Selenium, Appium, Spark, Jira, Bitbucket}
+\resumeSubHeadingListEnd
+
+%
+%--------TRAININGS------------
+\section{Trainings}
+\resumeSubHeadingListStart
+\resumeSubItem{\textbf{Oracle Java SE 8 Fundamentals Certification} \hfill \textit{2019}}
+\resumeSubItem{\textbf{High Performance Computing} \hfill \textit{2017}}
+\resumeSubHeadingListEnd
+%------------------------------
+
+%
+%--------CERTIFICATIONS------------
+\section{Certifications}
+\resumeSubHeadingListStart
+\resumeSubItem{\textbf{Coursera - AWS Fundamentals specialization} \hfill \textit{2022}}
+\resumeSubItem{\textbf{Coursera - Design a Test Automation Framework with Selenium and Java} \hfill \textit{2021}}
+\resumeSubItem{\textbf{Coursera - Getting Started with Google Kubernetes Engine} \hfill \textit{2018}}
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Monterrey Institute of Technology and Higher Education (ITESM)}{Nuevo Leon, Mexico}
+{Master of Science in Electronic Systems;  GPA: 4.00 (9.5/10.0)}{Aug 2008 -- Dec 2009}
+\resumeSubheading
+{Monterrey Institute of Technology and Higher Education (ITESM)}{Nuevo Leon, Mexico}
+{Bachelor of Electronic and Communications;  GPA: 3.7 (9.1/10.0)}{Jan 2004 -- May 2008}
+%\resumeItemListStart
+%	\resumeItem{Relevant Coursework}
+%    {}
+%\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%
+%--------PUBLICATIONS------------
+\section{Publications}
+\label{sec:Publications}
+\resumeSubHeadingListStart
+\resumeItem{IEEE ICWMC 2020}{\href{http://www.thinkmind.org/index.php?view=article&articleid=icwmc_2020_1_10_20034}{On Mass-Spring System Implementation in Cluster-Based MANETs for Natural Disaster Applications}}
+\resumeItem{IEEE CCWC 2019}{\href{https://ieeexplore.ieee.org/document/8666583}{Minimizing Routing Broadcast and Packet Loss in Wireless Ad-hoc Networks with a cluster-Based Self Organized Algorithm as MAC protocol.}}
+\resumeSubHeadingListEnd
+
+%
+%--------Languages------------
+\section{Languages}
+\resumeSubHeadingListStart
+\resumeItem{English}{Fluent (TOEFL: 607)}
+\resumeItem{Spanish}{Native}
+\resumeItem{French}{Alliance Francaise: Basic}
+\resumeSubHeadingListEnd
+\end{document}
