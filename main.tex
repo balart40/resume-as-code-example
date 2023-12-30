@@ -17,6 +17,7 @@
 \usepackage{fancyhdr}
 
 
+
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
 \fancyfoot{}
@@ -47,6 +48,10 @@
     \item\small{
         \textbf{#1}{: #2 \vspace{-2pt}}
     }
+}
+%Horizontal Bullet by balart
+\newcommand{\resumeItemHorizontal}[2]{
+    \textbullet\ \textbf{#1}: #2 \hspace{10pt}
 }
 
 \newcommand{\resumeSubheading}[4]{
@@ -85,10 +90,15 @@
 %-----------EXPERIENCE-----------------
 \section{Work Experience}
 \resumeSubHeadingListStart
-
+\resumeSubheading
+{Snap}{Seattle, WA}
+{Senior Quality Engineer(QE)}{Nov 2023 - Present}
+\resumeItemListStart
+\resumeItem{Snap Safety Division}{SW Development and Quality Assurance of Snap Safety back-end tools. Use of AWS and GCP (Kubernetes) combined with OOP (Typescript, Java, Kotlin) languages and Go for Integration and End-to-End testing. }
+\resumeItemListEnd
 \resumeSubheading
 {Amazon}{Seattle, WA}
-{Software Developer Engineer in Test (SDE-T)}{Jan 2022 - Present}
+{Software Developer Engineer in Test (SDE-T)}{Jan 2022 - Oct 2023}
 \resumeItemListStart
 \resumeItem{AWS Big Data Service for Amazon.com products}
 {Acted as SDE-T Lead on Back-end AWS ETL solution by impacting customer experience by selectively shown products based on regional information for Search, Detail Page, Cart and Checkout on Amazon.com shopping stages.}
@@ -98,6 +108,14 @@
 \resumeSubItem{Developed AWS Lambdas in Python with complete PyTest unit test coverage for pull request approval.}
 \resumeSubItem{Drove team projects test plan strategy, test cases and Go-no-Go requirements to validate readiness and ensure end to end stability for project launch.}
 \resumeSubItem{Designed and implemented a serverless framework with AWS SQS and Lambdas for data consistency checks to maintain code stability and minimize breakages, this framework was asynchronous therefore perform verification when the AWS DDB changed regardless if there was a pipeline deployment.}
+\resumeItemListEnd
+\resumeSubheading
+{ITESO}{Guadalajara, Mexico}
+{Research Assistant}{Aug 2016 - May 2023}
+\resumeItemListStart
+\resumeItem{Mobile Ad-hoc Networks (MANETs)}
+{Conducted research on Mobile Ad-hoc Networks (MANETs), focusing on cluster-based distributed algorithms and MAC protocol simulation using networks simulator 3 (ns3).}
+\resumeSubItem{Conclusion led to reduce network broadcast overhead, and efficient build of network backbone resulting in 2 published IEEE articles outlined in \hyperref[sec:Publications]{\textbf{Publications}} section.}
 \resumeItemListEnd
 \resumeSubheading
 {Amazon}{Seattle, WA}
@@ -119,22 +137,15 @@ QA Lead of \textbf{``Add to Cart"} feature on \textbf{Alexa} (Echo devices) for 
 {Led testing on the High Availability of the Oracle Cloud Infrastructure with focus on the OCI Software Defined Network (Higgs) as well as the High availability, and fault tolerance resiliency of Oracle GoldenGate middleware, which are used to replicate information from Oracle Database to many others databases to ensure data high availability.}
 \resumeSubItem{Developed detailed and comprehensive test plans outlining steps for re-production, and implemented test cases using a Java-based test framework for multiple projects of the OCI IaaS team to enable a smooth launch process.}
 \resumeItem{Oracle}
-{Oracle Cloud Service (OCS) QA lead, verified GoldenGate Middleware and Higgs Software Defined Network for OCI migration, ensured that the IaaS meet the QA launch bar in terms of high availability an resiliency. \newline}
+{Part of Oracle Cloud Service team (OCS) whom verified GoldenGate and Higgs on transition from Classic Cloud to Oracle Cloud Infrastructure (OCI) ensuring that the IaaS meet the quality launch bar in terms of high availability an resiliency. \newline}
 \resumeItemListEnd
+
 \resumeSubheading
 {ITESO}{Guadalajara, Mexico}
 {Subject Teacher}{Aug 2017 - Dec 2017}
 \resumeItemListStart
 \resumeItem{Introduction to algorithms}
 {Taught course covering critical topics such as data structures, search and sorting algorithms as well as time and space complexity calculation for engineering bachelor's degree students on the Western Institute of Technology and Higher Education (ITESO).}
-\resumeItemListEnd
-\resumeSubheading
-{ITESO}{Guadalajara, Mexico}
-{Research Assistant}{Aug 2016 - Dec 2017}
-\resumeItemListStart
-\resumeItem{Mobile Ad-hoc Networks (MANETs)}
-{Conducted research on Mobile Ad-hoc Networks (MANETs), focusing on cluster-based distributed algorithms and MAC protocol simulation using networks simulator 3 (ns3).}
-\resumeSubItem{Conclusion led to reduce network broadcast overhead, and efficient build of network backbone resulting in 2 published IEEE articles outlined in \hyperref[sec:Publications]{\textbf{Publications}} section.}
 \resumeItemListEnd
 \resumeSubheading
 {Intel}{Guadalajara, Mexico}
@@ -157,34 +168,37 @@ QA Lead of \textbf{``Add to Cart"} feature on \textbf{Alexa} (Echo devices) for 
 \section{Programming Skills}
 \resumeSubHeadingListStart
 \resumeItem{Languages}
-{Python, Java, TypeScript, C++, SQL, Scala}
+{Python, Java, TypeScript, Go, C++, SQL, Scala}
 \resumeItem{Operating Systems}
 {Linux: CentOS 6.X, Linux Enterprise 10/11, Amazon Linux}
 \resumeItem{Technologies}
-{AWS (Athena, S3, Glue, Step Function, Lambda, DDB), TestNG, Mockito, Lombok, JUnit, Dagger, GitHub \& Git, Selenium, Appium, Spark, Jira, Bitbucket}
+{AWS (Athena, S3, Glue, Step Function, Lambda, DDB), GCP, TestNG, Mockito, Lombok, JUnit, Dagger, GitHub \& Git, Selenium, Appium, Spark, Jira, Bitbucket}
 \resumeSubHeadingListEnd
 
-%
+% MERGED WITH CERTIFICATIONS
 %--------TRAININGS------------
-\section{Trainings}
-\resumeSubHeadingListStart
-\resumeSubItem{\textbf{Oracle Java SE 8 Fundamentals Certification} \hfill \textit{2019}}
-\resumeSubItem{\textbf{High Performance Computing} \hfill \textit{2017}}
-\resumeSubHeadingListEnd
+%\section{Trainings}
+%	\resumeSubHeadingListStart
+%	\resumeSubItem{\textbf{Oracle Java SE 8 Fundamentals Certification} \hfill \textit{2019}}
+%    \resumeSubItem{\textbf{High Performance Computing} \hfill \textit{2017}}
+%	\resumeSubHeadingListEnd
 %------------------------------
 
 %
-%--------CERTIFICATIONS------------
-\section{Certifications}
+%--------CERTIFICATIONS & TRAININGS------------
+\section{Certifications \& Trainings}
 \resumeSubHeadingListStart
 \resumeSubItem{\textbf{Coursera - AWS Fundamentals specialization} \hfill \textit{2022}}
 \resumeSubItem{\textbf{Coursera - Design a Test Automation Framework with Selenium and Java} \hfill \textit{2021}}
-\resumeSubItem{\textbf{Coursera - Getting Started with Google Kubernetes Engine} \hfill \textit{2018}}
+\resumeSubItem{\textbf{Oracle Java SE 8 Fundamentals Certification} \hfill \textit{2019}}
+\resumeSubItem{\textbf{High Performance Computing} \hfill \textit{2017}}
 \resumeSubHeadingListEnd
-
 %-----------EDUCATION-----------------
 \section{Education}
 \resumeSubHeadingListStart
+\resumeSubheading
+{Western Institute of Technology and Higher Education}{Guadalajara, Mexico}
+{Doctor of Philosophy in Engineering Science; GPA: 4.00 (9.6/10.0)}{Aug 2016 -- (On Hold)}
 \resumeSubheading
 {Monterrey Institute of Technology and Higher Education (ITESM)}{Nuevo Leon, Mexico}
 {Master of Science in Electronic Systems;  GPA: 4.00 (9.5/10.0)}{Aug 2008 -- Dec 2009}
@@ -211,7 +225,7 @@ QA Lead of \textbf{``Add to Cart"} feature on \textbf{Alexa} (Echo devices) for 
 \section{Languages}
 \resumeSubHeadingListStart
 \resumeItem{English}{Fluent (TOEFL: 607)}
-\resumeItem{Spanish}{Native}
-\resumeItem{French}{Alliance Francaise: Basic}
+\resumeItemHorizontal{Spanish}{Native}
+\resumeItemHorizontal{French}{Basic}
 \resumeSubHeadingListEnd
 \end{document}
